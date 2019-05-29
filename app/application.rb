@@ -5,7 +5,7 @@ class Application
   def call(env)
     resp = Rack::Response.new
 
-
+    time = DateTime.new
 
     if DateTime.new.hour < 12
       binding.pry
