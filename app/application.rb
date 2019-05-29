@@ -6,7 +6,7 @@ class Application
     resp = Rack::Response.new
 
     time = Time.new
-
+    puts time.hour
     if time.hour.to_i < 12
       resp.write "Morning"
     else
