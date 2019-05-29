@@ -7,7 +7,7 @@ class Application
 
 
 
-    if Date.new.hour < 12
+    if DateTime.new.hour < 12
       resp.write "Morning"
     else
       resp.write "Afternoon"
